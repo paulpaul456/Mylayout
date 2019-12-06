@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="/fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+
+    <style>
+        .section1 {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section1-1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        .section1-1 img {
+            max-width: 250px;
+
+        }
+
+        .section1-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 20%;
+
+        }
+
+        .section1 p {
+            color: gray;
+        }
+        .fa-align-justify{
+            display: none;
+        }
+
+        @media screen and (max-width:868px){
+            .section1 p{
+                display: none;
+            }
+            .section1-2 .setting{
+                display: none;
+            }
+            .fa-align-justify{
+                display: block;
+                margin-left: 90px;
+            }
+        }
+
+        /*以上為SECTION1  */
+        .section2 {
+            width: 100%;
+            margin: auto;
+            background: url(images/141965.jpg) no-repeat;
+            min-height: 700px;
+            background-size: cover;
+            background-position: top;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+
+
+
+        }
+
+        .opacity {
+            width: 100%;
+            min-height: 700px;
+            position: absolute;
+            opacity: 0.5;
+            background: black;
+            z-index: 2;
+        }
+
+        .scissors {
+            max-width: 150px;
+        }
+
+        .middle {
+            position: absolute;
+            z-index: 5;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+        }
+
+        .middle .p1 {
+            color: white;
+            font-size: 40px;
+        }
+
+        .middle .p2 {
+            color: white;
+            margin: 20px;
+        }
+
+        .pink {
+            width: 50%;
+            border: 2px solid palevioletred;
+            margin: auto;
+            min-height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+
+
+        }
+        .pink0{
+            display: flex;
+            
+        }
+
+        .pink1 {
+            max-width: 100px;
+            display: flex;
+            border-right: 2px solid palevioletred;
+            align-items: center;
+
+
+        }
+        .pink p{
+            color: white;
+            margin-left: 10px;
+           
+        }
+        .pink2{
+            color: white;
+            background: palevioletred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+        }
+        .rwdpink2{
+            color: white;
+            background: palevioletred;
+            
+            height: 30px;
+          
+            width:500px;
+            margin: auto;
+            margin-top: 10px;
+            display: none;
+        }
+        .rwdpink2-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:3px;
+        }
+        /* margintop如果在AUTO之上 會被蓋掉 */
+        @media screen and (max-width:868px){
+            .pink2{
+                display: none;
+
+            }
+            .rwdpink2{
+                display: block;
+            }
+            
+        }
+
+        /* 以上SECTION2 */
+
+        .section3{
+            background: black;
+            width: 100%;
+            margin: auto;
+           
+        }
+        .section3-1{
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 300px;
+            
+        }
+        .section3-1 div{
+            max-width: 250px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+        }
+        .section3-1 img{
+            width: 100%;
+            height: 100%;
+        }
+        .section3-1 p{
+            color: white;
+        }
+        @media screen and (max-width:1230px){
+           .section3-1{
+               flex-direction: column;
+               font-size: 30px;
+               min-height: 800px;
+           }
+            
+        }
+
+
+        /* 以上SECTION3 */
+        .section4{
+            width:90%;
+            margin: auto;
+            
+            
+        }
+        .issue{
+            text-align: center;
+            font-size: 35px;
+            margin-top: 50px;
+            
+        }   
+        .issueline{
+            width: 40px;
+            margin: auto;
+            height: 3px;
+            border: none;
+           background: black;
+           margin-top: 3px;
+        }
+        .section4pic{
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+           
+            
+        }
+        .pic4-rwd{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            
+            
+        }
+        .pic4{
+            max-width: 350px;
+            position: relative;
+            margin: 30px;
+           
+        }
+        .pic4 img{
+            width: 100%;
+            height: 100%;
+        }
+       
+        .hairstyle{
+            border: 1px solid palevioletred;
+            background:rgb(215, 215, 226);
+            color: palevioletred;
+           text-align: center;
+           padding: 5px;
+            width:70px; 
+            
+            position: absolute;
+            bottom: 80px;
+            right:-15px;
+            
+             
+
+           
+          
+           
+        }
+        .more{
+            background: palevioletred;
+            color:white;
+            max-width: 35px;
+            text-align: center;
+            margin-left:auto;
+            margin-top:-30px;
+           
+            
+            padding: 0 5px 0 5px;
+            
+           
+        }
+        @media screen and (max-width:1230px){
+            .section4pic{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .pic4-rwd{
+                width: 90%;
+                justify-content: space-between;
+                
+            }
+
+        }
+        /* 以上為section4 */
+     
+        .section5{
+            width:90%;
+            margin: auto;                       
+        }
+        .section5pic{
+            
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }  
+        .pic5{
+            width:550px;
+            position: relative;
+            
+            
+        }
+        .pic5 img{
+            width: 100%;
+            height: 80%;
+            object-position: top;
+           
+        
+        }   
+        .pic5 p{
+            color: white;
+            position: absolute;
+            top:40%;
+            left: 20%;
+            font-size: 25px;
+            
+           
+        }
+        .opacity2{
+            width: 100%;
+            height: 80%;
+            background: black;
+            opacity: 0.3;
+            position: absolute;
+            z-index: 10;
+
+        }
+
+        .more2{
+            background: palevioletred;
+            color:white;
+            max-width: 35px;
+            text-align: center;
+           margin-left:auto; 
+            padding: 0 5px 0 5px;
+            margin-top:-27px;
+            
+        }
+        @media screen and (max-width:1230px){
+            .section5pic{
+                flex-direction: column;
+               align-items: center;
+                
+            }
+            .pic5 p{
+                position: absolute;
+                left:25%;
+                top: 35%;
+                z-index: 20;
+                
+            }
+            .pic5{
+               width: 90% ;
+               height: 400px;
+               position: relative;
+               
+               
+            }
+            .pic5 img{
+                object-fit: cover;
+                
+            }
+            .opacity2{
+                height: 80%;
+                
+            }
+
+        }
+        /* 以上為section5 */
+
+        .section6{
+            width: 100%;
+            margin: auto;
+            background: rgb(173, 168, 168);
+            display: flex;
+            justify-content: center;
+        }
+        .section6-1{
+            width: 40%;
+            margin-top:50px;
+        }
+        .section6-1 .p1{
+            font-size: 30px;
+        }
+        .section6-1 hr{
+            width: 40px;
+            margin-left:80px;
+            height: 3px;
+            border: none;
+           background: black;
+           margin-top: 3px;
+           margin-bottom: 40px;
+        }
+        .section6-1 img{
+            min-width: 30%;
+        }  
+        .section6-1 .p2{
+            margin-top: 30px;
+            color:rgb(247, 85, 112);
+            font-size: 20px;
+
+        }  
+        @media screen and (max-width:1230px){
+            .section6 .p2{
+                display: none;
+
+            }
+            .section6-1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .section6-1 img{
+                height: 20%
+            }
+            .section6-1 hr{
+                margin-left: 200px;
+            }
+        }
+        /* 以上為SECTION6 */
+        .section7{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section7pic{
+            width: 100%;
+            margin: auto;
+            background: url(images/long-hair.jpg) no-repeat;
+            min-height: 342px;
+            background-size: cover;
+            filter: blur(3px);
+            position: absolute;
+            z-index: 2;
+           
+        }
+
+        .section7-1{
+            width: 25%;
+          text-align: center;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height:300px;
+            
+        }
+        .section7-1 p{
+            color: white;
+        }
+        .section7-1 .p1{
+            font-size: 100px;
+        }
+        .section7-1 .p2{
+            font-size: 40px;
+        }
+        .section7-1 hr{
+            margin-top: -30px;
+            width: 30px;
+        }
+        .middleline{
+            width: 1px;
+            height: 150px;
+            margin: 0 30px 0 30px;
+            border: 1px dashed white;
+            z-index: 10;
+        }
+        .section7-2{
+            width: 25%;
+           text-align: center;
+           display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height:300px;
+            z-index: 10;
+            
+        }
+        .section7 p{
+            color: white;
+        }
+        .section7-2 .p1{
+            font-size: 100px;
+        }
+        .section7-2-1{
+            display: flex;
+        }
+        .section7-2-1 p{
+            opacity: 0.5;
+            background: rgb(238, 230, 230);
+            color: black;
+            margin: 5px;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            right: 50px;
+            
+        }
+        @media screen and (max-width:1280px){
+            .section7{
+                flex-direction: column;
+                
+            }
+            .section7-1{
+                width: 50%;
+                justify-content: space-around;
+            }
+            .section7-2{
+                width: 50%;
+                justify-content: space-around;
+            }
+            .section7pic{
+                height: 100%;
+            }
+            .middleline{
+                display: none
+                }
+            .section7-1 .p2{
+                white-space: nowrap;
+            }
+            .section7-2-1 p{
+               white-space: nowrap;
+               left: 0px;
+               
+            }
+           
+        }
+        /* 以上為SECTION7 */
+        .section8{
+            width: 100%;
+            margin: auto;
+            background: rgb(173, 168, 168);
+            min-height: 250px;
+        }
+        .section8-0{
+            width: 100%;
+            margin: auto;
+           
+            display: flex;
+            justify-content: center;
+           padding: 30px 0 30px 0;
+            
+
+        }
+        .section8-1{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          margin-left: 20%;
+
+        }   
+        .section8-1 img{
+            max-width: 30px;
+            
+        }
+        .section8-2{
+
+            width: 45%;
+            display: flex;
+            margin-left: 10%;
+            align-items: center;
+            
+        }
+        .one{
+            display: flex;
+         align-items: center;
+        }
+        
+        .section8-2-3{
+           position: relative;
+        }
+        .section8-2-3 img{
+           
+            width: 150px;
+        }
+        .section8-2-3 p{
+            position: absolute;
+            top: 12px;
+            left: 50px;
+            color: palevioletred;
+                  
+        }
+        .section8 hr{
+            height: 1px;
+            width: 90%;
+            margin: auto;
+           background-color:gray;
+            margin-bottom: 30px;
+            border: none;
+        }
+        .section8 p{
+            /* height: 30px; */
+            text-align:center;
+            
+        }
+        .section8-rwd-p{
+                border: 2px solid palevioletred;
+                width: 80%;
+                margin: auto;
+                padding: 10px;
+                display: none;
+            }
+        @media screen and (max-width:1230px){
+            .section8-0{
+                flex-direction: column;
+              
+            }
+            .section8-1{
+                margin-left: 35%;
+                white-space:nowrap;
+                font-size: 15px;
+
+            }
+            .section8-1 img{
+                height: 40px;
+                max-width: 100px;
+                
+            }
+             .section8-1 br{
+                 display: none;
+             }
+             .section8-2{
+                 margin-top: 30px;
+             
+             }
+             .section8-2-1{
+                 white-space: nowrap;
+             }
+             .section8-2-2{
+                 margin-left: 400px;
+             }
+             .section8-2-3{
+                 display: none;
+             }
+            .section8-rwd-p{
+                border: 2px solid palevioletred;
+                width: 80%;
+                margin-top: 10px;
+               margin-right:10%;
+                padding: 10px 0 10px 0;
+                display: block;
+                color:palevioletred;
+            }
+            .lastp{
+                padding: 0 0 30px 0;
+            }
+        }
+
+        /* 以上為SECTION8 */
+       
+    </style>
+
+
+
+</head>
+
+<body>
+    <section class="section1">
+        <div class="section1-1">
+            <img src="pics_1129/logo.png" alt="">
+            <p>找髮型</p>
+            <p>找設計師</p>
+            <p>美髮誌</p>
+
+            
+        </div>
+
+        <div class="section1-2">
+            <p>註冊</p>
+            <p>登入</p>
+            <img class="setting" src="pics_1129/setting.png" alt="">
+            <i class="fas fa-align-justify"></i>
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <section class="section2">
+        <div class="opacity"> </div>
+
+        <div class="middle">
+            <img class="scissors" src="images/logo_icon_g.svg" alt="">
+            <p class="p1">該煩惱髮型嗎</p>
+            <p class="p2">給你最多髮型靈感及在地優秀設計師</p>
+
+            <div class="pink">
+
+                <div class="pink0">
+                    <div class="pink1">
+                        <img src="pics_1129/icon_searchbar_location.png" alt="">
+                        <form>
+                            <select name="找地區">
+                                <option value="Taipei">找地區</option>
+                                　<option value="Taipei">台北</option>
+                                　<option value="Taoyuan">桃園</option>
+                                　<option value="Hsinchu">新竹</option>
+                                　<option value="Miaoli">苗栗</option>
+                                　
+                            </select>
+                        </form>
+
+
+                    </div>
+
+                    <p>搜尋髮型主題</p>
+                 </div>
+                <div class="pink2">
+                    <img src="pics_1129/icon_searchbar_search.png" alt="">
+                    <p>去逛逛</p>
+
+                </div>
+           
+            </div>
+
+            <div class="rwdpink2">
+                   <div class="rwdpink2-1"> 
+                    <img src="pics_1129/icon_searchbar_search.png" alt="">
+                    <p>去逛逛</p>
+                 </div>
+                </div>
+            
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+    <section class="section3">
+        <div class="section3-1">
+            <div><img src="pics_1129/icon_search.svg" alt=""><p>在地設計師作品</p></div>
+            <div><img src="pics_1129/icon_fashion.svg" alt=""><P>流行髮型一手掌握</P></div> 
+            <div><img src="pics_1129/icon_book.svg" alt=""><p>即時溝通預約</p></div> 
+        </div>
+    </section>
+
+
+
+
+
+    <section class="section4">
+        <p class="issue">熱門主題</p>
+        <hr class="issueline">
+        
+        
+        <div class="section4pic">
+            
+            <div class="pic4-rwd">
+                <div class="pic4"><img src="images/model1.jpg" alt=""><div class="hairstyle">歐爸頭</div></div>
+                <div class="pic4"><img src="images/model2.jpg" alt=""><div class="hairstyle">吋頭</div></div>
+            </div>
+
+            <div class="pic4-rwd"> 
+                <div class="pic4"><img src="images/model3.jpg" alt=""><div class="hairstyle">油頭</div></div>
+                <div class="pic4"><img src="images/model4.jpg" alt=""><div class="hairstyle">空氣瀏海</div><div class="more">more</div></div>
+            </div>
+        </div>
+       
+      
+
+
+
+
+    </section>
+
+    
+
+    
+    
+    <section class="section5">
+            <p class="issue">趨勢話題</p>
+            <hr class="issueline">
+
+        <div class="section5pic">
+            
+                <div class="pic5">
+                    <div class="opacity2"></div>
+                    <img src="images/128141.jpg" alt="">
+                    <p>鬆感的劉海!配上極捲的捲度!反而...</p>
+                    
+                </div>
+                
+                <div class="pic5">
+                        <div class="opacity2"></div>
+                    <img src="images/138974.jpg" alt="">
+                    <p>日系鬆鬆捲度吹乾即可霧面髮色</p>
+                </div>
+               
+                <div  class="pic5">
+                    <div class="opacity2"></div>
+                    <img src="images/9344.jpg" alt="">
+                    <p>歐巴新寵!括號瀏海你跟風了嗎</p>
+                    <div class="more2">more</div>
+                 </div>
+                
+        </div>
+       
+
+    </section>
+
+    
+    
+    
+    
+    <section class="section6">
+        
+        <img src="images/phones.png" alt="">
+            <div class="section6-1">
+            <p class="p1">快速找到好髮型</p>
+            <hr>
+            <img src="pics_1129/btn_app_ios.png" alt="">
+            <img src="pics_1129/btn_app_android.png" alt="">
+            <p class="p2">下載註冊後就可以開始發表作品囉!</p>
+        </div>
+    </section>
+
+    <section class="section7">
+        <section class="section7pic">
+        </section>
+        <div class="section7-1">
+            <p>已有</p>
+            <p class="p1">635</p>
+            <p>位設計師</p>
+            <p class="p2">優秀設計師募集中</p>
+            <hr>
+         </div>
+
+         <div class="middleline"></div>
+
+         <div class="section7-2">
+                <p>發表</p>
+                <p class="p1">6421</p>
+                <p>張髮型作品</p>
+                <div class="section7-2-1">
+                <p class="p3">了解更多</p>
+                <p>立即免費註冊</p>
+                 </div>
+        </div>
+        </section>
+
+    <section class="section8">
+        <section class="section8-0">
+            <div class="section8-1">
+                <img src="images/logo_icon_g.svg" alt="">
+                <p>HairMap美髮地圖團隊效力於打造出最貼心實用的美髮資訊交流<br>社群，讓美髮時光成為每個仁生命中的美好時刻</p>
+            </div>
+
+            <div class="section8-2">
+                <div class="section8-2-1">
+                    <div class="one"><img src="images/email.svg" alt=""><p>聯絡我們</p></div>
+                    <div class="one"><img src="images/facebook_g.svg" alt=""><p>粉絲專業</p></div>
+                </div>
+
+                <div class="section8-2-2">
+                    <div class="one"><img src="images/ios.svg" alt=""><p>ios</p></div>
+                    <div class="one"><img src="images/android.svg" alt=""><p>Android</p></div>
+                </div>
+                
+                <div class="section8-2-3"><img src="pics_1129/btn_join.png" alt=""><p>設計師加入</p></div>
+            </div>
+            
+            <p class="section8-rwd-p">設計師加入</p>
+            
+        </section>
+        
+        <hr>
+        <p class="lastp">hairdodo inc.2016 All Rights Reserved使用者條款與隱私權政策</p>
+    </section>    
+
+   
+   
+
+</body>
+
+</html>

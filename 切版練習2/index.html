@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="/src/css/lightbox.css">
+    <style>
+        a:hover {
+            color: transparent;
+        }
+
+        .section1 {
+            background: rgb(240, 252, 253);
+            width: 100%;
+            opacity: 0.8;
+
+        }
+
+        .section1-navbar-brand {
+            color: #413e66;
+            font-size: 36px;
+        }
+
+        .section1-nav {
+            padding: 0 0 0 0;
+        }
+
+        .section1-nav-ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .section1-home {
+            color: #1bb1dc;
+        }
+
+        .section1-font {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .section1-font-1 {
+            margin-top: 30px;
+            width: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .section1-left-p1 {
+            display: inline;
+            color: #413e66;
+            font-size: 48px;
+        }
+
+        .section1-left-p2 {
+            display: inline;
+            font-size: 48px;
+            color: #1bb1dc;
+        }
+
+        .section1-left-button {
+            background: #1bb1dc;
+            color: white;
+            font-style: bold;
+            width: 164px;
+        }
+
+        .section1-right-img {
+            max-width: 500px;
+            min-height: 400px;
+        }
+
+        .section1-row {
+            margin-top: 150px;
+        }
+
+        /* 以上SECTION1 */
+        .section2 {
+            width: 100%;
+            margin-top: 100px;
+
+        }
+
+        .section2-left {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .section2-L-1 {
+            width: 350px;
+            height: 520px;
+            background: rgb(230, 246, 255);
+            position: absolute;
+            z-index: 2;
+            top: -30px;
+            left: -30px;
+        }
+
+        .section2-L-2 {
+            position: absolute;
+            width: 350px;
+            height: 520px;
+            background: rgb(230, 246, 255);
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+        }
+
+        .section2-left-img {
+            width: 350px;
+            height: 520px;
+            position: absolute;
+            z-index: 1000;
+            border: 10px solid white;
+        }
+
+        .section2-left-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .section2-left-img img:hover {
+            transform: scale(1.1)
+        }
+
+        .section2-right-p1 {
+            color: #413e66;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        .section2-right-p2 {
+            color: #696592;
+            font-weight: 400;
+            font-size: 22px;
+            font-style: italic;
+        }
+
+        .section2-right-p3 {
+            margin-top: 70px;
+        }
+
+        /* 以上SECTION2 */
+        .section3 {
+            background: rgb(240, 252, 253);
+            width: 100%;
+
+
+        }
+
+        .section3-p1 {
+            text-align: center;
+            font-size: 36px;
+            color: #413e66;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .section3-p2 {
+            text-align: center;
+            color: #535074;
+        }
+
+        .section3-p3 {
+            text-align: center;
+            text-align: center;
+            margin: auto;
+            font-size: 15px;
+            padding-bottom: 60px;
+            color: #535074;
+        }
+
+        .section3-box {
+            width: 100%;
+            height: 300px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, .1);
+            padding: 5px;
+        }
+
+        .section3-box:hover {
+            transform: scale(1.05);
+        }
+
+        .section3-box:hover .section3-box-p1 {
+            color: rgb(255, 222, 139);
+        }
+
+        .section3-box-p1 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .section3-box-p2 {
+            text-align: left;
+            text-align: center;
+        }
+
+        .fa-book {
+            color: rgb(248, 200, 230);
+        }
+
+        .fa-volleyball-ball {
+            color: rgb(250, 250, 201);
+        }
+
+        .fa-cloud-meatball {
+            color: rgb(220, 220, 255);
+        }
+
+        .fa-utensils {
+            color: rgb(255, 235, 209);
+        }
+
+        .fa-cheese {
+            color: rgb(222, 255, 190)
+        }
+
+        .fa-fish {
+            color: rgb(255, 197, 247);
+        }
+
+        .section3-row {
+            margin-top: 20px;
+        }
+
+        /* 以上為第三區塊 */
+        .section4-left-img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .section4-left-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section4-right-a {
+            font-size: 24px;
+            font-weight: 600;
+            margin-left: 10px;
+            color: #413e66;
+            display: inline;
+        }
+
+        .fa-gem {
+            color: rgb(232, 208, 255);
+            margin-top: 15px;
+        }
+
+        .section4-right-list {
+            display: flex;
+            align-items: center;
+        }
+
+        .section4-right-p {
+            color: #555186;
+        }
+
+        .counter {
+            font-weight: 700;
+            font-size: 48px;
+
+            color: #555186;
+
+        }
+
+        .section4-count-p {
+            color: #555186;
+        }
+
+        .section4-count {
+            text-align: center;
+        }
+
+        .section4-purple-left {
+            padding: 50px 0 0 50px;
+        }
+
+        .section4-purple {
+            width: 100%;
+            min-height: 200px;
+            background: #2d2b46;
+
+        }
+
+        .section4-purple-p1 {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+
+        }
+
+        .section4-purple-p2 {
+            color: white;
+        }
+
+        .section4-purple-right {
+            border: 3px solid white;
+            width: 190px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            margin: 40px 0 0 0;
+
+        }
+
+        .section4-purple-right-box {
+            display: flex;
+            align-items: center;
+        }
+
+        /* 以上SECTION4 */
+        .section5 {
+            margin-top: 100px;
+        }
+
+        .section5-left-img {
+            min-height: 300px;
+            width: 100%;
+        }
+
+        .section5-left-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section5-right {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .section5-right-p {
+            font-weight: 600;
+            font-size: 24px;
+            color: #444;
+        }
+
+        /* 以上SECTION5 */
+        .section6-p {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .section6-p p {
+            margin: 15px 15px 15px 0;
+            color: #413e66;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .section6-img-1 {
+            background: url(https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            min-height: 350px;
+        }
+
+        .section6-img-1-block {
+            width: 100%;
+            min-height: 350px;
+            background: rgba(255, 255, 255, 0.363);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+
+        }
+
+        .section6-img-1:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 350px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .fa-eye {
+            color: #1bb1dc;
+        }
+
+        .section6-img-1-block p {
+            color: white;
+            font-size: 22px;
+
+            font-weight: 700;
+        }
+
+        .section6-img-2 {
+            background: url(https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+
+            min-height: 230px;
+            margin: 20px 0 20px 0;
+        }
+
+        .section6-img-2:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 230px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .section6-img-3 {
+            background: url(https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            min-height: 230px;
+        }
+
+        .section6-img-3:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 230px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+
+        .section6-img-4 {
+            background: url(https://images.unsplash.com/photo-1554731617-8eafa9975365?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 234px;
+        }
+
+        .section6-img-4:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 234px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+
+        .section6-img-5 {
+            background: url(https://images.unsplash.com/photo-1541735363-54a8c6dd824c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            min-height: 523px;
+            margin: 20px 0 20px 0;
+        }
+
+
+        .section6-img-5:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 523px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+
+
+
+        .section6-img-6 {
+            background: url(https://images.unsplash.com/photo-1523329110005-297cf111f8de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 230px;
+        }
+
+
+        .section6-img-6:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 230px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+
+
+
+        .section6-img-7 {
+            background: url(https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 200px;
+        }
+
+        .section6-img-7:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 200px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+
+
+
+        .section6-img-8 {
+            background: url(https://images.unsplash.com/photo-1516163173352-d1c4d006f9ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            min-height: 523px;
+            margin: 20px 0 20px 0;
+        }
+
+        .section6-img-8:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 523px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+
+        .section6-img-9 {
+            background: url(https://images.unsplash.com/photo-1490222939321-2a267366a124?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 230px;
+        }
+
+        .section6-img-9:hover .section6-img-1-block {
+            width: 100%;
+            min-height: 230px;
+            background: rgba(255, 255, 255, 0.363);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+        /* 以上section6  */
+        .section7 {
+            margin-top: 50px;
+            width: 100%;
+            min-height: 200px;
+        }
+
+        .section7-list-img {
+            max-width: 150px;
+            min-height: 150px;
+
+        }
+
+        .section7-list-img img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .section7-item {
+            margin-right: 0px;
+            width: 100%;
+            display: flex;
+        }
+
+        .section7-item-3p {
+            margin-left: 40px;
+        }
+
+        .section7-item-p1 {
+            font-size: 20px;
+            font-weight: 700;
+
+            color: #111;
+
+        }
+
+        .section7-item-p2 {
+            font-size: 14px;
+            color: #999;
+            
+        }
+
+        /*以上SECTION7*/
+        .section9 {
+            margin-top: 50px;
+        }
+
+        .owl-carousel .item1 {
+            width: 150px;
+            height: 100px;
+        }
+
+        .owl-carousel {
+            margin-top: 50px;
+        }
+
+        .owl-prev span {
+            width: 50px;
+            height: 50px;
+            font-size: 50px;
+            color: #1bb1dc;
+        }
+
+        .owl-next span {
+            width: 50px;
+            height: 50px;
+            font-size: 50px;
+            color: #1bb1dc;
+        }
+
+        .owl-nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 以上section9 */
+    </style>
+</head>
+
+<body>
+    <section class="section1">
+        <div class="container">
+            <div class="section1-font">
+                <div class="section1-font-1">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square"></i>
+
+                </div>
+
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light section1-nav">
+                <div><a class="section1-navbar-brand" href="#">Navbar</a></div>
+
+
+                <div class="collapse navbar-collapse  section1-nav-ul" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link " style="color: #1bb1dc;" href="#">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row section1-row">
+                <div class="col-md-6">
+                    <p class="section1-left-p1">Rapid Solutions<br>
+                        for Your <p class="section1-left-p2">Business!</p>
+                    </p>
+                    <button type="button" class="btn section1-left-button">Get Started</button>
+
+                </div>
+                <div class="col-md-6">
+                    <img class="section1-right-img" src="https://bootstrapmade.com/demo/themes/Rapid/img/intro-img.svg"
+                        alt="">
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="section2-left">
+                        <div class="section2-L-1"></div>
+                        <div class="section2-left-img">
+                            <img src="https://bootstrapmade.com/demo/themes/Rapid/img/about-img.jpg" alt="">
+                        </div>
+                        <div class="section2-L-2"></div>
+
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="section2-right-p1">About us</p>
+                    <p class="section2-right-p2">Odio sed id eos et laboriosam consequatur eos earum soluta.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <p>Aut dolor id. Sint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque.
+                        Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel
+                        ut quidem alias veritatis repudiandae ut fugit. Est ut eligendi aspernatur nulla voluptates
+                        veniam iusto vel quisquam. Fugit ut maxime incidunt accusantium totam repellendus eum error. Et
+                        repudiandae eum iste qui et ut ab alias.</p>
+                    <p></p>
+                    <p class="section2-right-p3">
+                        <i class="fas fa-check-circle"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        <i class="fas fa-check-circle"></i>Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </p>
+                    <p>
+                        <i class="fas fa-check-circle"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat
+                        nulla pariatur.
+                    </p>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section3">
+        <div class="container">
+            <p class="section3-p1">services</p>
+            <p class="section3-p2">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo
+            </p>
+            <p class="section3-p3"> abhorreant vituperatoribus.</p>
+            <div class="row section3-row">
+                <div class="col-md-4">
+                    <div class="section3-box">
+                        <i class="fas fa-book  fa-3x"></i>
+                        <p class="section3-box-p1">Lorem Ipsum</p>
+                        <p class="section3-box-p2">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="section3-box">
+                        <i class="fas fa-volleyball-ball fa-3x"></i>
+                        <p class="section3-box-p1">Lorem Ipsum</p>
+                        <p class="section3-box-p2">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="section3-box">
+                        <i class="fas fa-cloud-meatball fa-3x"></i>
+                        <p class="section3-box-p1">Lorem Ipsum</p>
+                        <p class="section3-box-p2">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row section3-row">
+                <div class="col-md-4">
+                    <div class="section3-box">
+                        <i class="fas fa-utensils fa-3x"></i>
+                        <p class="section3-box-p1">Lorem Ipsum</p>
+                        <p class="section3-box-p2">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="section3-box">
+                        <i class="fas fa-cheese fa-3x"></i>
+                        <p class="section3-box-p1">Lorem Ipsum</p>
+                        <p class="section3-box-p2">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="section3-box">
+                        <i class="fas fa-fish fa-3x"></i>
+                        <p class="section3-box-p1">Lorem Ipsum</p>
+                        <p class="section3-box-p2">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section4">
+        <div class="container">
+            <p class="section3-p1">Why choose us?</p>
+            <p class="section3-p2">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo
+                abhorreant
+            </p>
+            <p class="section3-p3"> vituperatoribus.</p>
+        </div>
+        .<div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section4-left-img">
+                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/why-us.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <p>Molestiae omnis numquam corrupti omnis itaque. Voluptatum quidem impedit. Odio dolorum
+                        exercitationem est error omnis repudiandae ad dolorum sit.</p>
+                    <p>Explicabo repellendus quia labore. Non optio quo ea ut ratione et quaerat. Porro facilis deleniti
+                        porro consequatur et temporibus. Labore est odio. Odio omnis saepe qui. Veniam eaque ipsum. Ea
+                        quia voluptatum quis explicabo sed nihil repellat..</p>
+                    <div>
+                        <div class="section4-right-list">
+                            <i class="far fa-gem fa-2x"></i>
+                            <div class="section4-right-a">Corporis dolorem</div>
+                        </div>
+                        <p class="section4-right-p">Commodi quia voluptatum. Est cupiditate voluptas quaerat officiis ex
+                            alias dignissimos et
+                            ipsum. Soluta at enim modi ut incidunt dolor et.</p>
+                    </div>
+                    <div>
+                        <div class="section4-right-list">
+                            <i class="far fa-gem fa-2x"></i>
+                            <div class="section4-right-a">Corporis dolorem</div>
+                        </div>
+                        <p class="section4-right-p">Commodi quia voluptatum. Est cupiditate voluptas quaerat officiis ex
+                            alias dignissimos et
+                            ipsum. Soluta at enim modi ut incidunt dolor et.</p>
+                    </div>
+                    <div>
+                        <div class="section4-right-list">
+                            <i class="far fa-gem fa-2x"></i>
+                            <div class="section4-right-a">Corporis dolorem</div>
+                        </div>
+                        <p class="section4-right-p">Commodi quia voluptatum. Est cupiditate voluptas quaerat officiis ex
+                            alias dignissimos et
+                            ipsum. Soluta at enim modi ut incidunt dolor et.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="section4-count">
+                        <p class="counter">274</p>
+                        <p class="section4-count-p">Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="section4-count">
+                        <p class="counter">1150</p>
+                        <p class="section4-count-p">Clients</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="section4-count">
+                        <p class="counter">800</p>
+                        <p class="section4-count-p">Clients</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="section4-count">
+                        <p class="counter">764</p>
+                        <p class="section4-count-p">Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section4-purple">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="section4-purple-left">
+                            <p class="section4-purple-p1">Call To Action</p>
+                            <p class="section4-purple-p2">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa
+                                qui officia deserunt mollit anim id est laborum.
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 section4-purple-right-box">
+                        <div class="section4-purple-right">
+                            call to action
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section5-left-img">
+                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/features-1.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section5-right">
+                        <p class="section5-right-p">Voluptatem dignissimos provident quasi corporis voluptates sit
+                            assumenda.</p>
+                        <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae
+                            perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia
+                            recusandae non ad at et a.</p>
+                        <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea
+                            corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus
+                            quia sit. Porro rerum eum eum.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section5-right">
+                        <p class="section5-right-p">Voluptatem dignissimos provident quasi corporis voluptates sit
+                            assumenda.</p>
+                        <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae
+                            perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia
+                            recusandae non ad at et a.</p>
+                        <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea
+                            corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus
+                            quia sit. Porro rerum eum eum.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="section5-left-img">
+                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/features-2.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="section7">
+            <div class="container">
+                <p class="section3-p1">Testimonials</p>
+                <div class="owl-carousel" id="test2">
+                    <div class="item section7-item">
+    
+                        <div>
+                            <div class="section7-list-img">
+                                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-4.jpg" alt="">
+                            </div>
+    
+                        </div>
+    
+                        <div class="section7-item-3p">
+                            <div>
+                                <p class="section7-item-p1">Paul Chuang</p>
+                                <p class="section7-item-p2">hihihi</p>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                    ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="item section7-item">
+    
+                            <div>
+                                <div class="section7-list-img">
+                                    <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-3.jpg" alt="">
+                                </div>
+        
+                            </div>
+        
+                            <div class="section7-item-3p">
+                                <div>
+                                    <p class="section7-item-p1">Paul Chuang</p>
+                                    <p class="section7-item-p2">hihihi</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                        ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                                </div>
+                            </div>
+        
+                    </div>
+    
+                        <div class="item section7-item">
+    
+                                <div>
+                                    <div class="section7-list-img">
+                                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-1.jpg" alt="">
+                                    </div>
+            
+                                </div>
+            
+                                <div class="section7-item-3p">
+                                    <div>
+                                        <p class="section7-item-p1">Paul Chuang</p>
+                                        <p class="section7-item-p2">hihihi</p>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                            ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                                    </div>
+                                </div>
+            
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="owl-dots">
+                        <button role="button" class="owl-dot"><span></span></button><button role="button"
+                            class="owl-dot active"><span></span></button>
+                        <button role="button" class="owl-dot"><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+
+    <section class="section6">
+        <div class="container">
+            <p class="section3-p1">Our Portfolio</p>
+            <div class="section6-p">
+                <p>All</p>
+                <p>App</p>
+                <p>Card</p>
+                <p>Web</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="section6-img-1">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <a href="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                class="link-preview" title="Preview" data-lightbox="image-1" data-title="My caption">
+                                <i class="fas fa-eye fa-3x"></i>
+                            </a>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="section6-img-2">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <a href="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                data-lightbox="image-1"><i class="fas fa-eye fa-3x"></i></a>
+
+                        </div>
+
+                    </div>
+                    <div class="section6-img-3">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="section6-img-4">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+
+                    </div>
+                    <div class="section6-img-5">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+
+                    </div>
+                    <div class="section6-img-6">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="section6-img-7">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+
+                    </div>
+                    <div class="section6-img-8">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+
+                    </div>
+                    <div class="section6-img-9">
+                        <div class="section6-img-1-block">
+                            <p>App1</p>
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="section9">
+        <div class="container">
+            <p class="section3-p1">Our Clients</p>
+            <div class="owl-carousel" id="test1">
+                <div class="item item1">
+                    <a target="_blank" href="連結網址"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-4.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank" href="http://www.wfublog.com/2014/10/member-system-pilot-run.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-5.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank" href="http://www.wfublog.com/2014/04/wfu-blog-domain-anniversary.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-6.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank"
+                        href="http://www.wfublog.com/2014/04/blogger-mobile-template-or-responsive-web-design.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-7.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank"
+                        href="http://www.wfublog.com/2014/04/blogger-mobile-template-or-responsive-web-design.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-2.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank" href="連結網址"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-4.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank" href="http://www.wfublog.com/2014/10/member-system-pilot-run.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-5.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank"
+                        href="http://www.wfublog.com/2014/04/blogger-mobile-template-or-responsive-web-design.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-7.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank"
+                        href="http://www.wfublog.com/2014/04/blogger-mobile-template-or-responsive-web-design.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-2.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank"
+                        href="http://www.wfublog.com/2014/04/blogger-mobile-template-or-responsive-web-design.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-7.png" /></a>
+                </div>
+                <div class="item item1">
+                    <a target="_blank"
+                        href="http://www.wfublog.com/2014/04/blogger-mobile-template-or-responsive-web-design.html"><img
+                            src="https://bootstrapmade.com/demo/themes/Rapid/img/clients/client-2.png" /></a>
+                </div>
+                <div class="owl-dots">
+                    <button role="button" class="owl-dot"><span></span></button><button role="button"
+                        class="owl-dot active"><span></span></button>
+                    <button role="button" class="owl-dot"><span></span></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="
+    https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="/src/js/lightbox.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            })
+        })
+    </script>
+    <script>
+        //有兩個倫波的話 用不同ID區隔開來就可以
+        $("#test1").owlCarousel({
+            items: 4, // 一次輪播幾個項目
+            loop: true, // 循環輪播
+            margin: 10, // 與右邊圖片的距離
+            nav: true, // 導航文字
+            autoplay: true, // 自動輪播
+            autoplayTimeout: 2000, // 切換時間
+            autoplayHoverPause: true // 滑鼠經過時暫停
+        })
+
+        $("#test2").owlCarousel({
+            items: 1, // 一次輪播幾個項目
+            loop: true, // 循環輪播
+            margin: 10, // 與右邊圖片的距離
+            nav: true, // 導航文字
+            autoplay: true, // 自動輪播
+            autoplayTimeout: 2000, // 切換時間
+            autoplayHoverPause: true // 滑鼠經過時暫停
+        })
+    </script>
+
+
+</body>
+
+</html>
