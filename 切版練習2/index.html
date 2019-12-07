@@ -368,7 +368,7 @@
 
 
         }
-
+        
         .section6-p p {
             margin: 15px 15px 15px 0;
             color: #413e66;
@@ -382,6 +382,7 @@
             background-position: center center;
             width: 100%;
             min-height: 350px;
+            transition: 1s;
         }
 
         .section6-img-1-block {
@@ -627,10 +628,57 @@
         .section7-item-p2 {
             font-size: 14px;
             color: #999;
-            
+
         }
 
         /*以上SECTION7*/
+        .section8-box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .section8-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section8-shadow {
+            position: absolute;
+            background: rgba(5, 5, 5, 0.555);
+            top: 180px;
+
+            width: 100%;
+            height: 140px;
+            z-index: 10;
+            transition: 0.5s;
+        }
+
+        .section8-box:hover .section8-shadow {
+            top: 115px
+        }
+
+        .section8-shadow-p {
+            color: white;
+            text-align: center;
+        }
+
+        .p1 {
+            font-weight: 700;
+
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .section8-font {
+            color: white;
+            text-align: center;
+        }
+
+        /* 以上SECTION8 */
         .section9 {
             margin-top: 50px;
         }
@@ -664,6 +712,114 @@
         }
 
         /* 以上section9 */
+        .section10{
+            background: #f5f8fd;
+            min-height: 600px;
+        }
+        .section10-box{
+            background: white;
+            text-align: center;
+            transition: 0.5s;
+            min-height: 350px;
+        }
+        .section10-box-head-num {
+            font-size: 60px;
+        }
+
+        .section10-box-head-sym {
+            font-size: 40px;
+            position: relative;
+            top: -20px;
+        }
+
+        .section10-box-head {
+            color: #535074;
+            text-align: center;
+        }
+
+        .section10-box-title {
+            text-align: center;
+            color: #535074;
+        }
+        .section10-text{
+            text-align: center;
+        }
+        .progress{
+         background: #8dcefa;
+            width: 0;
+            height: 3px;
+            transition: 1s;
+        }
+        .section10-box:hover .progress{
+            background: #8dcefa;
+            width: 100%;
+            height: 3px;
+        }
+        .section10-box:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 29px 0 rgba(68,88,144,.1);
+        }
+        /* 以上section10 */
+       .section11{
+           min-height: 500px;
+       }
+       /* section11 */
+       .section12{
+           margin-top: 50px;
+        background: #f5f8fd;
+       }
+       .section12-left p{
+           color: #413e66;
+       }
+       .section12-left-p1{
+           font-size: 40px;
+       }
+       .section12-left-p2{
+           font-size: 25px;
+       }
+       .section12-input1{
+         border: 1px solid #d9dde6;
+       }
+       .section12-input2{
+        color: white;
+           border: none;
+           background: #1bb1dc;
+       }
+       .section12-title{
+           font-size: 20px;
+       }
+       .section12-mid div p{
+           color: #413e66;
+       }
+       .section12-icon{
+           background: #1bb1dc;
+           width: 30px;
+           height: 30px;
+           border-radius: 50%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: white;
+       }
+       .section12-right{
+           text-align: center;
+       }
+       .section12-right input{
+        width: 100%;
+       }
+       .inp-email{
+           margin: 10px  0 10px 0;
+       }
+       .section12-btn{
+           color: white;
+           border: none;
+           background: #1bb1dc;
+       }
+       .buttom{
+           text-align: center;
+           margin: 50px 0 50px 0;
+
+       }
     </style>
 </head>
 
@@ -1008,97 +1164,156 @@
     </section>
 
     <section class="section7">
-            <div class="container">
-                <p class="section3-p1">Testimonials</p>
-                <div class="owl-carousel" id="test2">
-                    <div class="item section7-item">
-    
+        <div class="container">
+            <p class="section3-p1">Testimonials</p>
+            <div class="owl-carousel" id="test2">
+                <div class="item section7-item">
+
+                    <div>
+                        <div class="section7-list-img">
+                            <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-4.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="section7-item-3p">
                         <div>
-                            <div class="section7-list-img">
-                                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-4.jpg" alt="">
-                            </div>
-    
+                            <p class="section7-item-p1">Paul Chuang</p>
+                            <p class="section7-item-p2">hihihi</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
                         </div>
-    
-                        <div class="section7-item-3p">
-                            <div>
-                                <p class="section7-item-p1">Paul Chuang</p>
-                                <p class="section7-item-p2">hihihi</p>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
-                                    ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                            </div>
+                    </div>
+
+                </div>
+
+                <div class="item section7-item">
+
+                    <div>
+                        <div class="section7-list-img">
+                            <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-3.jpg" alt="">
                         </div>
-    
+
                     </div>
-    
-                    <div class="item section7-item">
-    
-                            <div>
-                                <div class="section7-list-img">
-                                    <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-3.jpg" alt="">
-                                </div>
-        
-                            </div>
-        
-                            <div class="section7-item-3p">
-                                <div>
-                                    <p class="section7-item-p1">Paul Chuang</p>
-                                    <p class="section7-item-p2">hihihi</p>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
-                                        ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                                </div>
-                            </div>
-        
+
+                    <div class="section7-item-3p">
+                        <div>
+                            <p class="section7-item-p1">Paul Chuang</p>
+                            <p class="section7-item-p2">hihihi</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                        </div>
                     </div>
-    
-                        <div class="item section7-item">
-    
-                                <div>
-                                    <div class="section7-list-img">
-                                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-1.jpg" alt="">
-                                    </div>
-            
-                                </div>
-            
-                                <div class="section7-item-3p">
-                                    <div>
-                                        <p class="section7-item-p1">Paul Chuang</p>
-                                        <p class="section7-item-p2">hihihi</p>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
-                                            ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                                    </div>
-                                </div>
-            
+
+                </div>
+
+                <div class="item section7-item">
+
+                    <div>
+                        <div class="section7-list-img">
+                            <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-1.jpg" alt="">
+                        </div>
+
                     </div>
-    
-    
-    
-    
-    
-                    <div class="owl-dots">
-                        <button role="button" class="owl-dot"><span></span></button><button role="button"
-                            class="owl-dot active"><span></span></button>
-                        <button role="button" class="owl-dot"><span></span></button>
+
+                    <div class="section7-item-3p">
+                        <div>
+                            <p class="section7-item-p1">Paul Chuang</p>
+                            <p class="section7-item-p2">hihihi</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                        </div>
                     </div>
+
+                </div>
+
+
+                <div class="item section7-item">
+
+                    <div>
+                        <div class="section7-list-img">
+                            <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-4.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="section7-item-3p">
+                        <div>
+                            <p class="section7-item-p1">Paul Chuang</p>
+                            <p class="section7-item-p2">hihihi</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item section7-item">
+
+                    <div>
+                        <div class="section7-list-img">
+                            <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-3.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="section7-item-3p">
+                        <div>
+                            <p class="section7-item-p1">Paul Chuang</p>
+                            <p class="section7-item-p2">hihihi</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item section7-item">
+
+                    <div>
+                        <div class="section7-list-img">
+                            <img src="https://bootstrapmade.com/demo/themes/Rapid/img/testimonial-1.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="section7-item-3p">
+                        <div>
+                            <p class="section7-item-p1">Paul Chuang</p>
+                            <p class="section7-item-p2">hihihi</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueSed
+                                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="owl-dots">
+                    <button role="button" class="owl-dot"><span></span></button><button role="button"
+                        class="owl-dot active"><span></span></button>
+                    <button role="button" class="owl-dot"><span></span></button>
                 </div>
             </div>
-        </section>
-    
+        </div>
+    </section>
+
 
 
     <section class="section6">
         <div class="container">
             <p class="section3-p1">Our Portfolio</p>
             <div class="section6-p">
-                <p>All</p>
-                <p>App</p>
-                <p>Card</p>
-                <p>Web</p>
+                <p class="section6-all">All</p>
+                <p class="section6-app">App</p>
+                <p  class="section6-card">Card</p>
+                <p class="section6-web">Web</p>
             </div>
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="section6-img-1">
+                    <div class="section6-img-1 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <a href="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -1112,7 +1327,7 @@
 
 
                     </div>
-                    <div class="section6-img-2">
+                    <div class="section6-img-2 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <a href="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -1121,7 +1336,7 @@
                         </div>
 
                     </div>
-                    <div class="section6-img-3">
+                    <div class="section6-img-3 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <i class="fas fa-eye fa-3x"></i>
@@ -1130,21 +1345,21 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="section6-img-4">
+                    <div class="section6-img-4 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <i class="fas fa-eye fa-3x"></i>
                         </div>
 
                     </div>
-                    <div class="section6-img-5">
+                    <div class="section6-img-5 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <i class="fas fa-eye fa-3x"></i>
                         </div>
 
                     </div>
-                    <div class="section6-img-6">
+                    <div class="section6-img-6 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <i class="fas fa-eye fa-3x"></i>
@@ -1154,21 +1369,21 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="section6-img-7">
+                    <div class="section6-img-7 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <i class="fas fa-eye fa-3x"></i>
                         </div>
 
                     </div>
-                    <div class="section6-img-8">
+                    <div class="section6-img-8 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <i class="fas fa-eye fa-3x"></i>
                         </div>
 
                     </div>
-                    <div class="section6-img-9">
+                    <div class="section6-img-9 allImg">
                         <div class="section6-img-1-block">
                             <p>App1</p>
                             <i class="fas fa-eye fa-3x"></i>
@@ -1182,7 +1397,78 @@
     </section>
 
 
+    <section class="section8">
+        <div class="container">
+            <p class="section3-p1">Team</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="section8-box">
+                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/team-1.jpg" alt="">
+                        <div class="section8-shadow">
+                            <p class="section8-shadow-p p1">Walter White</p>
+                            <p class="section8-shadow-p p2">Chief Executive Officer</p>
+                            <div class="section8-font">
+                                <i class="fab fa-twitter fa-2x"></i>
+                                <i class="fab fa-instagram fa-2x"></i>
+                                <i class="fab fa-facebook-square fa-2x"></i>
 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="section8-box">
+                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/team-2.jpg" alt="">
+                        <div class="section8-shadow">
+                            <p class="section8-shadow-p p1">Sarah Jhonson</p>
+                            <p class="section8-shadow-p p2">Chief Executive Officer</p>
+                            <div class="section8-font">
+                                <i class="fab fa-twitter fa-2x"></i>
+                                <i class="fab fa-instagram fa-2x"></i>
+                                <i class="fab fa-facebook-square fa-2x"></i>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="section8-box">
+                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/team-3.jpg" alt="">
+                        <div class="section8-shadow">
+                            <p class="section8-shadow-p p1">William Anderson</p>
+                            <p class="section8-shadow-p p2">Chief Executive Officer</p>
+                            <div class="section8-font">
+                                <i class="fab fa-twitter fa-2x"></i>
+                                <i class="fab fa-instagram fa-2x"></i>
+                                <i class="fab fa-facebook-square fa-2x"></i>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="section8-box">
+                        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/team-4.jpg" alt="">
+                        <div class="section8-shadow">
+                            <p class="section8-shadow-p p1">Amanda Jepson</p>
+                            <p class="section8-shadow-p p2">Chief Executive Officer</p>
+                            <div class="section8-font">
+                                <i class="fab fa-twitter fa-2x"></i>
+                                <i class="fab fa-instagram fa-2x"></i>
+                                <i class="fab fa-facebook-square fa-2x"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
 
 
@@ -1250,8 +1536,225 @@
 
     </section>
 
+    <section class="section10">
+        <div class="container">
+            <p class="section3-p1">Pricing</p>
+            <p class="section3-p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            </p>
+            <p class="section3-p3"> accusantium doloremque</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="section10-box">
+                            <div class="progress">
+
+                            </div>
+                            <div class="section10-box-head">
+                                    <span class="section10-box-head-sym">$</span>
+                                    <span class="section10-box-head-num">19</span>
+                                    <span>/month</span>
+                                </div>
+                                <P class="section10-box-title">Basic Plan</P>
+                                <div class="section10-text">
+                                        <p>Odio animi voluptates
+            
+            
+                                            </p>
+                                            <p> Inventore quisquam et</p>
+                                            <p> Et perspiciatis suscipit</p>
+                                            <p> 24/7 Support System</p>
+                            </div>
+                          
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            
+                    </div>
+                   
+                   
+                </div>
+                <div class="col-md-4">
+                        <div class="section10-box">
+                                <div class="progress">
+    
+                                </div>
+                                <div class="section10-box-head">
+                                        <span class="section10-box-head-sym">$</span>
+                                        <span class="section10-box-head-num">19</span>
+                                        <span>/month</span>
+                                    </div>
+                                    <P class="section10-box-title">Basic Plan</P>
+                                    <div class="section10-text">
+                                            <p>Odio animi voluptates
+                
+                
+                                                </p>
+                                                <p> Inventore quisquam et</p>
+                                                <p> Et perspiciatis suscipit</p>
+                                                <p> 24/7 Support System</p>
+                                </div>
+                              
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                
+                        </div>
 
 
+                </div>
+                <div class="col-md-4">
+                        <div class="section10-box">
+                                <div class="progress">
+    
+                                </div>
+                                <div class="section10-box-head">
+                                        <span class="section10-box-head-sym">$</span>
+                                        <span class="section10-box-head-num">19</span>
+                                        <span>/month</span>
+                                    </div>
+                                    <P class="section10-box-title">Basic Plan</P>
+                                    <div class="section10-text">
+                                            <p>Odio animi voluptates
+                
+                
+                                                </p>
+                                                <p> Inventore quisquam et</p>
+                                                <p> Et perspiciatis suscipit</p>
+                                                <p> 24/7 Support System</p>
+                                </div>
+                              
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="section11">
+            <div class="container">
+                    <p class="section3-p1">Frequently Asked Questions</p>
+                    <p class="section3-p2">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo
+                        abhorreant
+                    </p>
+                    <p class="section3-p3"> vituperatoribus.</p>
+                    
+                    <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" data-toggle="collapse" data-target="#collapseOne"  aria-controls="collapseOne" id="headingOne">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Non consectetur a erat nam at lectus urna duis?
+                                  </button>
+                                </h2>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"  id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="headingThree">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+            </div>
+         
+
+    </section>
+
+
+    <section class="section12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="section12-left">
+                            <p class="section12-left-p1">RAPID</p>
+                            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                            <p class="section12-left-p2">OUR NEWSLETTER</p>
+                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
+                    </div>
+                    <form action="" method="post">
+                            <input class="section12-input1" type="email" name="email">
+                            <input class="section12-input2" type="submit" value="Subscribe">
+                    </form>
+                
+                </div>
+
+                <div class="col-md-3">
+                    <div class="section12-mid">
+                            <div>
+                                    <p class="section12-title">USEFUL LINKS</p>
+                                    <p>Home</p>
+                                    <p>About us</p>
+                                    <p>Services</p>
+                                    <p>Terms of service</p>
+                                    <p>Privacy policy</p>
+                
+                            </div>
+        
+                            <div>
+                                    <p  class="section12-title">CONTACT US</p>
+                                    <p>A108 Adam Street<br> United States<br>Phone: +1 5589 55488 55 <br>Email: info@example.com </p>
+                                                    
+                            </div>
+                            
+                                    <div class="section1-font-1">
+                                            <div class="section12-icon"><i class="fab fa-twitter"></i></div>
+                                            <div class="section12-icon"><i class="fab fa-instagram"></i></div>
+                                            <div class="section12-icon">  <i class="fab fa-facebook-square"></i></div>                                        
+                                          
+                        
+                                    </div>
+                            
+                    </div>
+                  
+                  
+                </div>
+                <div class="col-md-5">
+                    <div class="section12-right">
+                            <p>SEND US A MESSAGE</p>
+                            <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
+                            <input type="text"  placeholder="yourname">
+                            <input class="inp-email" type="text"  placeholder="youremail">
+                            <input type="text"  placeholder="yoursubject">
+                            <textarea class="mt-5" name="" id="" cols="60" rows="5"></textarea>
+                            <button class="section12-btn">send message</button>
+                    </div>
+                       
+                </div>
+            </div>
+
+            <div class="buttom">© Copyright Rapid. All Rights Reserved
+                    Designed by BootstrapMade</div>
+
+        </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -1297,6 +1800,44 @@
             autoplayTimeout: 2000, // 切換時間
             autoplayHoverPause: true // 滑鼠經過時暫停
         })
+    </script>
+    <script>
+        let allImg=document.querySelectorAll('.allImg')
+        let all=document.querySelector('.section6-all')
+        let app=document.querySelector('.section6-app')
+        let web=document.querySelector('.section6-web')
+        let card=document.querySelector('.section6-card')
+        let test=document.querySelector('.section6-img-1')
+        let test2=document.querySelector('.section6-img-4')
+        let test3=document.querySelector('.section6-img-2')
+        let test4=document.querySelector('.section6-img-3')
+        let test5=document.querySelector('.section6-img-6')
+        let test6=document.querySelector('.section6-img-7')
+        app.addEventListener('click',function(){
+            test.style.display='none'
+            test2.style.display='none'
+        })
+        all.addEventListener('click',function(){
+            for(let i=0;i<allImg.length;i++){
+                allImg[i].style.display='block'
+            }
+        })
+        card.addEventListener('click',function(){
+            for(let i=0;i<allImg.length;i++){
+                allImg[i].style.display='block'
+            }
+            test3.style.display='none'
+            test4.style.display='none'
+        })
+        web.addEventListener('click',function(){
+            for(let i=0;i<allImg.length;i++){
+                allImg[i].style.display='block'
+            }
+            test5.style.display='none'
+            test6.style.display='none'
+        })
+    
+    
     </script>
 
 
